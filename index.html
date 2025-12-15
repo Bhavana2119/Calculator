@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+        <div class="calc-header">
+            <span class="brand-name">Code Calc</span> 
+            <span class="solar-pannel"></span>   
+    </div>
+
+    <div class="display-screen">
+        <div id="history"></div>
+        <div id="result">0</div>
+    </div>
+
+    
+    <div class="keypad">
+      <button class="btn action" onclick="clearScreen()">AC</button>
+      <button class="btn action" onclick="deleteLast()">DEL</button>
+      <button class="btn operator" onclick="append('%')">%</button>
+      <button class="btn operator" onclick="append('/')">÷</button>
+
+      <button class="btn" onclick="append('7')">7</button>
+      <button class="btn" onclick="append('8')">8</button>
+      <button class="btn" onclick="append('9')">9</button>
+      <button class="btn operator" onclick="append('*')">×</button>
+
+      <button class="btn" onclick="append('4')">4</button>
+      <button class="btn" onclick="append('5')">5</button>
+      <button class="btn" onclick="append('6')">6</button>
+      <button class="btn operator" onclick="append('-')">-</button>
+
+      <button class="btn" onclick="append('1')">1</button>
+      <button class="btn" onclick="append('2')">2</button>
+      <button class="btn" onclick="append('3')">3</button>
+      <button class="btn operator" onclick="append('+')">+</button>
+
+      <button class="btn zero" onclick="append('0')">0</button>
+      <button class="btn" onclick="append('.')">.</button>
+      <button class="btn equal" onclick="calculate()">=</button>
+    </div>
+  </div>
+
+  <div class="credits">
+    <p>Built Using HTML , CSS ,JAVASCRIPT</p> <a href="https://Code Calc.com" target="_blank">Cod Calc Limited</a></p>
+  </div>
+
+</div>
+
+<a href="#" class="credits"> Development by Bhavana RN &hearts; </a>
+
+
+</body>
+</html>
